@@ -172,7 +172,7 @@ button,
 [type=button],
 [type=reset],
 [type=submit] {
-  -webkit-appearance: button;
+  appearance: button;
 }
 
 /**
@@ -193,7 +193,7 @@ button:-moz-focusring,
 [type=button]:-moz-focusring,
 [type=reset]:-moz-focusring,
 [type=submit]:-moz-focusring {
-  outline: 1px dotted ButtonText;
+  outline: 1px dotted Button;
 }
 
 /**
@@ -255,7 +255,7 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield; /* 1 */
+  appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
 
@@ -263,7 +263,7 @@ textarea {
  * Remove the inner padding in Chrome and Safari on macOS.
  */
 [type=search]::-webkit-search-decoration {
-  -webkit-appearance: none;
+  appearance: none;
 }
 
 /**
@@ -408,24 +408,103 @@ td {
   margin-left: 17px;
 }
 
+.mainconteiner {
+  width: 100%;
+}
+
 .Main {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
 }
+.Main-about {
+  margin-top: 20px;
+}
 .Main-about img {
-  width: 240px;
-  height: 240px;
+  width: 200px;
+  height: 300px;
+  border-radius: 50px;
 }
 .Main-about-title {
-  margin-top: 30px;
+  margin-top: 40px;
+  text-align: center;
 }
 .Main-about-title h3 {
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 .Main-about-title h4 {
-  padding-bottom: 10px;
+  padding-bottom: 15px;
+}
+.Main-about-title button {
+  width: 100px;
+  height: 36px;
+  border: 1px solid rgba(27, 31, 35, 0.2);
+  background: none;
+  background-color: #eff3f6;
+  background-image: linear-gradient(0.18deg, #faf3f6, #eff3f6 90%);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.Main-about-dsc {
+  margin-top: 15px;
+  font-size: 14px;
+}
+.Main-project {
+  width: 100%;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+.Main-project-links {
+  display: flex;
+  justify-content: space-between;
+}
+.Main-project .section {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.Main-project .section a {
+  font-size: 12px;
+  color: grey;
+}
+.Main-project .conteiner {
+  margin-top: 20px;
+  margin-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.Main-project-Bar {
+  margin-top: 20px;
+  margin-left: 10px;
+  padding: 10px;
+  border: 1px solid rgb(63, 60, 60);
+  width: 400px;
+  position: relative;
+}
+.Main-project-Bar .up {
+  display: flex;
+}
+.Main-project-Bar .up .right svg {
+  position: absolute;
+  right: 0;
+}
+.Main-project-Bar .down {
+  margin-top: 40px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+.Main-project-Bar .down span {
+  background-color: #563d7c;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.Main-project-Bar .down p {
+  font-size: 14px;
+  padding: 5px;
 }
 
 .icon {
